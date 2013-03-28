@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>
-  	
+  	Map Of Chicago
   </title>
   <style type="text/css">
   	#wrapper {background: url(chicago_map_full.png) no-repeat; background-size: 50%; width: 2050px; min-height: 768px; margin: 0px auto; background-position: 204px 6px;}
@@ -14,7 +14,7 @@ text-align: center;}
   	.green {color: green;list-style: none;}
   	.home {position: relative;top: 273px;left: 474px;}
   	.home p {position: relative;top: -72px;left: 0px;width: 62px;}
-  	.work {position: fixed;top: 282px;left: 588px;}
+  	.work {position: fixed;top: 229px;left: 588px;}
   	.work p {position: relative;top: -73px; left: 0px;}
   	.hide{display: none;}
   </style>
@@ -22,16 +22,14 @@ text-align: center;}
 <body>
 <div id="wrapper">
 	<ul>
-		<li class="home"><img class="marker" src="marker-map-gps.png"><p class="label">Home</p></li>
-		<li class="work"><img class="marker" src="marker-map-gps.png"><p class="label">Work</p></li>
+		<li class="home"><img class="marker" src="marker-map-gps.png"><p class="label hide">Home</p></li>
+		<li class="work"><img class="marker" src="marker-map-gps.png"><p class="label hide">Work</p></li>
 	</ul>
 
 </div>
 <script type="text/javascript" src="jquery-1.9.1.js">
 </script>
 <script type="text/javascript">
-	$(document).ready($('.label').addClass('hide'));
-
 	$('.marker').hover(function(event){
 		$(this).siblings('.label').toggleClass('hide');},function(event){
 		$(this).siblings('.label').toggleClass('hide');}
